@@ -3,6 +3,7 @@
 
 # Except:
 !.gitignore
-!*.hpp
-!*.cpp
 !CMakeLists.txt
+!*.cpp
+!*.hpp
+!details/
