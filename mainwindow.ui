@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>922</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>CalibriTestProj</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="2">
+     <widget class="QPushButton" name="pushButtonChooseOutputDirectory">
+      <property name="text">
+       <string>Выбрать директорию</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="4">
+     <widget class="QComboBox" name="comboBoxBufSizeType">
+      <item>
+       <property name="text">
+        <string>Kb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mb</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gb</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QComboBox" name="comboBoxOperation">
+      <item>
+       <property name="text">
+        <string>XOR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>OR</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>AND</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineEditOutputPath">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="lineEditFileMask">
+      <property name="text">
+       <string>*.*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QCheckBox" name="checkBoxDeleteInputFiles">
+      <property name="text">
+       <string>Удалить входные файлы по завершении</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="labelNameCollision">
+      <property name="text">
+       <string>При коллизии имён</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QPushButton" name="pushButtonStart">
+      <property name="text">
+       <string>Старт</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1" colspan="2">
+     <widget class="QComboBox" name="comboBoxBufSize">
+      <item>
+       <property name="text">
+        <string>Файл целиком</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Указать вручную</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="labelFileMask">
+      <property name="text">
+       <string>Маска файлов:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QProgressBar" name="progressBarConvertation">
+      <property name="value">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="labelInfoAboutStop">
+      <property name="text">
+       <string>При прерывании будет завершена обработка последней обнаруженной группы файлов</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1">
+     <widget class="QPushButton" name="pushButtonStopTimer">
+      <property name="text">
+       <string>Прервать обработку по таймеру</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QComboBox" name="comboBoxCollision">
+      <item>
+       <property name="text">
+        <string>Спросить</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Счётчик к имени файла</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Перезаписать</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Пропустить</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QTimeEdit" name="timeEditInputPathCheck">
+      <property name="displayFormat">
+       <string>mm:ss</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="labelBufSize">
+      <property name="text">
+       <string>Размер буфера (RAM = x2 размера буфера)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEditInputPath">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QCheckBox" name="checkBoxTimer">
+      <property name="text">
+       <string>Таймер (mm:ss)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="QLineEdit" name="lineEditBufSize">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="labelOutputFileDirectory">
+      <property name="text">
+       <string>Директория входных файлов:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="pushButtonChooseInputDirectory">
+      <property name="text">
+       <string>Выбрать директорию</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="labelInputFileDirectory">
+      <property name="text">
+       <string>Директория входных файлов:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLineEdit" name="lineEditNumber">
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="placeholderText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="2" colspan="2">
+     <widget class="QLabel" name="labelFileCounter">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>922</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
