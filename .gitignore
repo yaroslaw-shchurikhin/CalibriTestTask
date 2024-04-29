@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# Except:
+!.gitignore
+!*.hpp
+!*.cpp
+!CMakeLists.txt
